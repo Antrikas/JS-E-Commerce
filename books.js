@@ -13,11 +13,13 @@ else if (filter === 'RATINGS' ){
   books.sort((a, b) => b.rating - a.rating);
 }
 
-const ratingHTML = '';
+let ratingHTML = '';
 
-for (le i =0; i < Math.floor(4.1); ++i) {
+for (let i =0; i < Math.floor(4.1); ++i) {
   ratingHTML += '<i class="fas fa-star"></i>\n'
 }
+
+  console.log(ratingHTML)
 
   const booksHtml = books
   .map((book) => {
